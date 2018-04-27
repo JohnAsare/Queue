@@ -5,3 +5,23 @@
 
 """ Queue implemntation """
 
+
+class Queue:
+
+    def __init__(self):
+        self.queue = []
+
+    def enqueue(self, item):
+        self.queue.insert(0, item)
+
+    def dequeue(self):
+        return self.queue.pop()
+
+    def peek(self):
+        return self.queue[-1]
+
+    def isEmpty(self):
+        return self.queue == []
+
+    def size(self):
+        return len(self.queue)
