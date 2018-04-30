@@ -25,4 +25,3 @@ class Queue:
     def peek(self):
         return self.queue[-1]
 
-
